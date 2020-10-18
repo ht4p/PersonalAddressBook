@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- <link type="text/css" rel="stylesheet" href="login.css">-->
+    <title>欢迎登录个人通讯录系统</title>
+
+    <script type="text/javascript">
+        function login(){
+            var username=document.getElementById("username").value;
+            var password=document.getElementById("password").value;
+
+            if(username=="admin" && password=="admin")
+            {
+                alert("登录成功！");
+                window.location.href='web_homework2_form.html';
+            }else{
+                alert("登录失败！");
+                return false;
+            }
+
+        }
+    </script>
+
+</head>
+
+<body>
+
+<form action="">
+    用户名：<input type="text" Id="username"><br>
+    密码：<input type="password" Id="password"><br>
+    <input type="button" onclick="login()" value="登录">
+</form>
+
+</body>
+</html>
