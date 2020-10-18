@@ -1,36 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <!-- <link type="text/css" rel="stylesheet" href="login.css">-->
-    <title>欢迎登录个人通讯录系统</title>
-
-    <script type="text/javascript">
-        function login(){
-            var username=document.getElementById("username").value;
-            var password=document.getElementById("password").value;
-
-            if(username=="admin" && password=="admin")
-            {
-                alert("登录成功！");
-                window.location.href='web_homework2_form.html';
-            }else{
-                alert("登录失败！");
-                return false;
-            }
-
-        }
-    </script>
-
+    <meta charset="UTF-8">
+    <title>欢迎来到个人通讯录</title>
+    <link href="my.css" rel="stylesheet">
 </head>
-
 <body>
-
-<form action="">
-    用户名：<input type="text" Id="username"><br>
-    密码：<input type="password" Id="password"><br>
-    <input type="button" onclick="login()" value="登录">
-</form>
+<div id="panel-login">
+    <div class="panel-header">
+        <h2>login for test</h2>
+    </div>
+    <div class="panel-content">
+        <div class="user-pwd">
+            <input placeholder="请输入账号" name="user">
+        </div>
+        <div class="user-pwd">
+            <input placeholder="请输入密码" type="password" name="pwd">
+        </div>
+        <button class="login-btn" onclick="javascrtpt:window.location.href='Form.html'">登&nbsp;录</button>
+    </div>
+</div>
 
 </body>
 </html>

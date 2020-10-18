@@ -2,29 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-    <script type="text/javascript">
-        function checkEmail() {
-            var str=document.getElementById("Email").value;
-
-            var pattern = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-            if(pattern.test(str)) {
-                alert('录入成功');
-
-            } else {
-                alert('非法输入');
-            }
-        }
-    </script>
+    <title>添加界面</title>
+    <link href="my.css" rel="stylesheet">
+    <script src="add.js"></script>
 </head>
 <body>
+<div id="panel-add">
+    <div class="panel-header">
+        <h2>添加联系人</h2>
+    </div>
+    <div class="panel-content">
+        <form name="form1">
+            <div class="user-pwd">
+                <input placeholder="请输入姓名" name="name">
+            </div>
+            <div class="user-pwd">
+                <input placeholder="请输入电话" name="phone">
+            </div>
+            <div class="user-pwd">
+                <input placeholder="请输入邮箱" name="email">
+            </div>
+            <div class="user-pwd">
+                <input placeholder="请输入住址" name="address">
+            </div>
+            <div class="user-pwd">
+                <input placeholder="请输入QQ号" name="qq">
+            </div>
+        </form>
+        <button class="login-btn" type="button" onclick="check()">添&nbsp;加</button>
+    </div>
 
-<form action="">
-    姓名: <input type="text" Id="name"><br>
-    电话: <input type="text" Id="telephone"><br>
-    邮箱: <input type="text" Id="Email"><br>
-    <input type="button" onclick="checkEmail()" Id="finish" value="完成"><br>
-</form>
+</div>
+
 
 </body>
 </html>
